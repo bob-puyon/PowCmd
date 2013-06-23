@@ -17,12 +17,7 @@ public class PowCmdCommandExecutor implements CommandExecutor {
 	@Override
 	public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
 
-
-		Player p = null;
-
-		if( sender instanceof Player ){
-			p = (Player)sender;
-		}
+		CommandSender p = sender;
 
 		if( !p.hasPermission("powcmd.exec") ){
 			//権限がない場合は応答なしで処理
