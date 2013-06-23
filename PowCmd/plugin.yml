@@ -1,0 +1,13 @@
+name: PowCmd
+version: 1.0
+description: Player can execute command as Console or Other Players.
+main: bob_puyon.PowCmd.PowCmd
+commands:
+  PowCmd:
+    description: Please hare administrator about this command
+    aliases: [pc]
+    usage: /powcmd [operation]
+permissions:
+  powcmd.exec:
+    description: Allows you to access all Command
+    default: op
